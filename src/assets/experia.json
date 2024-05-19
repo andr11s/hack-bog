@@ -147,11 +147,6 @@
 	{
 	  "inputs": [
 		{
-		  "internalType": "uint256",
-		  "name": "_amount",
-		  "type": "uint256"
-		},
-		{
 		  "internalType": "address",
 		  "name": "_customer",
 		  "type": "address"
@@ -164,7 +159,7 @@
 	  ],
 	  "name": "buy",
 	  "outputs": [],
-	  "stateMutability": "nonpayable",
+	  "stateMutability": "payable",
 	  "type": "function"
 	},
 	{

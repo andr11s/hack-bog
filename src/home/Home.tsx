@@ -16,12 +16,15 @@ const Home = (props: Props) => {
   // setWalletRestaurant("0x459393De4adF9007053391B1cb481Cc1DFA18878")
   const buyProduct = () => {
     console.log("enter");
+    console.log(BigInt(props.amount));
+    
     
     writeContract({
-      address: '0xED4b1b03F6e2f2b99b12043c5082E9DA5fcDEe59',
+      address: '0x2eCDC5ADdc6b6045428b4417636733292b5f8afC',
       abi: contractExperia,
       functionName: 'buy',
-      args: [1, address, "0x459393De4adF9007053391B1cb481Cc1DFA18878"],
+      args: [ address, "0x459393De4adF9007053391B1cb481Cc1DFA18878"],
+      value: BigInt(props.amount),
       chainId: 43113,
     })
 

@@ -17,7 +17,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <WagmiConfig config={config}>
         <RainbowKitProvider Chain={config.chains}>
-          <Home message="Desayuno" amount={21000}/>
+          <Home message="Desayuno" amount={210000}/>
         </RainbowKitProvider>
       </WagmiConfig>
     </QueryClientProvider>
