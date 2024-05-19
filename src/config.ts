@@ -1,11 +1,9 @@
 import { http, createConfig } from 'wagmi'
-import { mainnet, polygon, sepolia } from 'wagmi/chains'
+import {  avalancheFuji } from 'wagmi/chains'
 
 export const config = createConfig({
-  chains: [mainnet, sepolia, polygon],
+  chains: [avalancheFuji ],
   transports: {
-    [mainnet.id]: http(),
-    [sepolia.id]: http(),
-    [polygon.id]: http(),
+    [avalancheFuji.id]: http(),
   },
 })
