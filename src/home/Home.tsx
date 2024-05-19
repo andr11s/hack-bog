@@ -78,6 +78,7 @@ const Home = (props: Props) => {
               <QRCode
                 value={`avax:${address}?amount=${props.amount}&message=${props.message}`}
                 size={256}
+                
               />
             </div>
             <div className="w-full md:w-1/2 p-4">
@@ -96,7 +97,7 @@ const Home = (props: Props) => {
         )
 
       ) : (
-        <div className='flex justify-center text-center justify-items-center items-center h-screen overflow-hidden bg-black'>
+        <div className='flex justify-center text-center justify-items-center items-center h-screen overflow-hidden bg-gray-100'>
           <div>
             <img className='w-80 h-80 bg-cover' src={logo} alt="" />
             <div>
